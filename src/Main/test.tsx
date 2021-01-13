@@ -5,6 +5,12 @@ describe('<Main />', () => {
   it('should render the heading', () => {
     render(<Main />);
 
-    expect(screen.getByRole('heading', { name: /test/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Advanced/i })).toBeInTheDocument();
+  });
+
+  it('should render colors correctly', () => {
+    const { container } = render(<Main />);
+
+    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' });
   });
 });
