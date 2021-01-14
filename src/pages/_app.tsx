@@ -10,6 +10,7 @@ function App({ Component, pageProps }: AppProps) {
         <title>Advanced Store - Boilerplate</title>
         <link rel="shortcut icon" href="" />
         <link rel="apple-touch-icon" href="" />
+        <link rel="manifest" href="/manifest.json"/>
         <meta
           name="description"
           content="A simple project starter to work with typescript, react, nextjs and styled components"
